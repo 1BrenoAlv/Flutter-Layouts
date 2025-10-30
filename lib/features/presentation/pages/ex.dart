@@ -64,6 +64,7 @@ class _ExState extends State<Ex> {
                       _ligado = newValue;
                     });
                   },
+                  activeColor: Colors.black,
                 ),
               ],
             ),
@@ -80,16 +81,18 @@ class _ExState extends State<Ex> {
                     border: OutlineInputBorder(),
                   ),
                 ),
+                SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () {
                     mostrarTexto();
                   },
                   child: Text("Aperte pai"),
                 ),
-                Text(_text),
+                Text(_text, style: TextStyle(fontSize: 30)),
               ],
             ),
           ),
+          Divider(height: 10, color: Colors.black, thickness: 2),
         ],
       ),
     );
