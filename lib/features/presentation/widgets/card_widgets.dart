@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-// 1. Renomeei para ser mais claro e adicionei as propriedades
 class CardHomeWidget extends StatelessWidget {
-  // 2. O widget agora recebe os dados que você precisa
   final String titulo;
   final IconData icone;
   final String descricao;
-  final Widget destino; // A página/widget para onde navegar
+  final Widget destino; 
 
   const CardHomeWidget({
     super.key,
